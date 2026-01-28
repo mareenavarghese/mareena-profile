@@ -1,13 +1,16 @@
 {
   "name": "portfolio",
   "private": true,
+  "homepage": "http://mareenavarghese.github.io/mareena-profile",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",
